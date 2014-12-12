@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_material_light">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/abc_text_size_title_material"
+        android:text="@string/notification_behavior"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:textColor="@color/primary_text_default_material_light"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupPrefs1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/titleTextView">
+
+        <RadioButton
+            android:id="@+id/radioBlockTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/block_time"
+            android:textColor="@color/primary_text_default_material_light"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:paddingLeft="30dp"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:text="@string/block_time_desc" />
+
+        <RadioButton
+            android:id="@+id/radioBlockAll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/block_all"
+            android:textColor="@color/primary_text_default_material_light" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/block_all_desc"
+            android:textColor="@color/secondary_text_default_material_light"
+            android:paddingLeft="30dp" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="@string/changes_effect"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/radioGroupPrefs1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/material_deep_teal_500"
+        android:paddingLeft="8dp"/>
+
+    <TextView
+        android:id="@+id/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="@string/app_name"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/textView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/primary_text_default_material_light"
+        android:paddingLeft="8dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:paddingTop="16dp"
+        android:text="@string/developed_by"
+        android:layout_below="@+id/app_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textViewDeveloped"
+        android:textColor="@color/secondary_text_default_material_light"
+        android:paddingLeft="8dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewDeveloped"
+        android:layout_marginTop="16dp"
+        android:weightSum="1">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rebootButton"
+            android:text="@string/reboot"
+            android:background="@drawable/button"
+            android:layout_weight=".3"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/softRebootButton"
+            android:text="@string/soft_reboot"
+            android:background="@drawable/button"
+            android:layout_weight=".5"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/closeButton"
+            android:text="@string/close"
+            android:background="@drawable/button"
+            android:layout_weight=".2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">Disable Samsung BlockingMode Notification</string>
+    <string name="block_all">Always blocked</string>
+    <string name="block_all_desc">The notification never appears.</string>
+    <string name="block_time">Blocked only if active</string>
+    <string name="block_time_desc">The notification appears only if the Blocking Mode is really active (like iOS…)</string>
+    <string name="developed_by">Developed by @invano</string>
+    <string name="close">Close</string>
+    <string name="notification_behavior">BlockingMode Notification</string>
+    <string name="reboot">Reboot</string>
+    <string name="soft_reboot">Soft Reboot</string>
+    <string name="changes_effect">Your changes will take effect after reboot or softreboot</string>
 </resources>
